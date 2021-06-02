@@ -54,15 +54,19 @@ function game(){
         playerselection = prompt("Please enter your choice");
         Computerselection = Computerplay();
         result = play(playerselection,Computerselection);
+        //console.log(result);
         switch(result){
             case 0:
                 console.log("Draw!");
+                //console.log(i);
                 break;
             case 1: 
                 console.log("You Win!");
+                //console.log(i);
                 break;
-            case 2:
+            case -1:
                 console.log("You Lose!");
+                //console.log(i);
                 break;
         }
     }
